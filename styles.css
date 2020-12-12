@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    background-color:#f5f5f5;
+}
+
+#welcome-section {
+    background-color: #2A363B;
+    width:100%;
+    height:100vh;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner {
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Righteous', cursive;
+}
+
+.inner > h1 {
+    animation: SlideUp 1.5s ease;
+    font-size: 7vw;
+}
+
+.inner > p {
+    font-size:4vw; 
+    font-style: italic;
+    color:rgb(9, 185, 185);
+    animation: SlideUp 2s ease;
+}
+.navbar {
+    width: 100vw;
+    position:fixed;
+    z-index: 5;
+}
+
+.nav-link {
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 24px;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+h2, h3, h4 {
+    font-family: 'Righteous', cursive;
+    font-size: 60px;
+    text-shadow: -3px 3px lightgray;
+    margin: 5% 0;
+}
+
+.about-body {
+    margin: 5% 15% 3%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+
+#about > img {
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+}
+
+.other-photo {
+    width: 45px;
+    margin-left: 10%;
+}
+
+.skills-container {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skills-container  > img {
+    width: 45px;
+}
+
+.familiar {
+    width: 45px;
+    margin-right: 5%;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0 5% 5%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.project-tile {
+    margin: 0 10% 7%;
+    width: 50%;
+    height:auto;
+    background:#f5f5f5;
+    border-radius: .5rem;
+    opacity: 0;
+    color: #606060;
+}
+
+.card-title {
+    font-size: 30px;
+    margin: 3%;
+}
+
+.card-body {
+    text-align: center;
+    margin: 0 8% 5% 8%;
+    padding: 0;
+}
+
+.card-body > span {
+    margin: 3%;
+    color: #989898;
+}
+
+.card-text {
+    margin: 5% 0;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.other-container {
+    margin: 2% 20%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10% 3%;
+}
+
+.other {
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: -3px 3px 3px gray;
+    opacity: 0;
+}
+
+.other-container > a:hover {
+    opacity: .7;
+}
+.carousel {
+    width: 60%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon,
+.carousel-indicators {
+    filter: invert(1);
+    margin-bottom: 0;
+}
+
+#contact {
+    margin: 10% 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    color: #606060;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-link {
+        font-size: 16px;
+    }
+    .inner > h1 {
+        font-size: 11vw;
+    }
+
+    .inner > p {
+        font-size: 7vw;
+    }
+
+    .skills-container > img {
+        width: 30px;
+    }
+
+    h2,h3,h4 {
+        font-size: 10vw;
+        text-shadow: -2px 2px lightgray;
+    }
+    #about > img {
+        width: 30%;
+        margin-bottom: 3%;
+    }
+
+    .about-body {
+        margin: 5%;
+        text-align: justify;
+        line-height: 125%;
+    }
+    #projects {
+        font-size: 13px
+    }
+    
+    .project-tile {
+        width: 90%;
+        margin-bottom: 12%
+    }
+
+    .card-title {
+        font-size: 6vw;
+    }
+   
+    .other-container {
+        margin: 5%;
+    }
+
+    .carousel {
+        width: 90%;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        background-size: 4vw;
+    }
+
+    #contact {
+        margin-top: 10%;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .info > p {
+        margin: 2%;
+        width: 100%;
+        text-align: justify;
+        font-size: 13px;
+    }
+}
+@keyframes SlideUp {
+    0% {
+        transform: translateY(250px);
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+/* palette : 99B898 FECEAB FF847C E84A5F 2A363B */
