@@ -1,6 +1,7 @@
-body {
+body, html  {
     margin: 0;
     background-color:#f5f5f5;
+    scroll-behavior: smooth;
 }
 
 #welcome-section {
@@ -91,6 +92,11 @@ h2, h3, h4 {
     margin-right: 5%;
 }
 
+.card-img-overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
 #projects {
     display: flex;
     flex-direction: column;
@@ -103,58 +109,31 @@ h2, h3, h4 {
 }
 
 .project-tile {
-    margin: 0 10% 7%;
-    width: 50%;
+    margin-bottom: 7%;
+    width: 55%;
     height:auto;
-    background:#f5f5f5;
+    background:black;
     border-radius: .5rem;
     opacity: 0;
-    color: #606060;
+    color: white;
+    cursor: pointer;
 }
 
 .card-title {
     font-size: 30px;
-    margin: 3%;
 }
 
-.card-body {
-    text-align: center;
-    margin: 0 8% 5% 8%;
-    padding: 0;
-}
-
-.card-body > span {
-    margin: 3%;
-    color: #989898;
-}
-
-.card-text {
-    margin: 5% 0;
-}
-
-.links {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.other-container {
-    margin: 2% 20%;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10% 3%;
-}
-
-.other {
-    width: 100%;
+.card-img-top {
     border-radius: .5rem;
-    box-shadow: -3px 3px 3px gray;
-    opacity: 0;
 }
 
-.other-container > a:hover {
-    opacity: .7;
+div > span {
+    color: black;
+    background-color: rgb(245, 245, 245);
+    padding: .5%;
+    border-radius: .25rem;
 }
+
 .carousel {
     width: 60%;
 }

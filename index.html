@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" 
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
@@ -51,9 +55,6 @@
             <p>I'm <em><b>Adrian Torrano</b></em>, a self- taught web developer devoted to building quality and user-friendly websites.
                 <br>
                 <br>
-                I build projects not only to showcase my skills but also to learn, explore and improve from it.
-                <br>
-                <br>
                 Below is a list of my technical skills with hands-on experience:
             </p>
             <div class="skills-container">
@@ -70,75 +71,96 @@
         </div>
     </section>
     <section id="projects">
-        <h3>Portfolio</h3>
-        <div class="card project-tile shadow">
-            <img class="card-img-top" src="img/MDPreviewer.png" alt="Project Thumbnail">
-            <div class="card-body">
-                <p class="card-title">Markdown Previewer</p>
-                <span>HTML & CSS</span>
-                <span>ReactJS</span>
-                <span>jQuery</span>
-                <p class="card-text">Web application that takes user input and provides a real- time markdown preview.</p>
-                <div class="links">
-                    <span><a class="card-link" href="https://torranicles.github.io/markdown-previewer/" target="_blank">View Page</a></span>
-                    <span><a class="card-link" href="https://github.com/torranicles/markdown-previewer" target="_blank">View Repository</a></span>
+        <h3>Projects</h3>
+        <div class="card project-tile shadow" id="ET-box">
+            <img class="card-img-top" src="img/ExerciseTracker.PNG" alt="Project Thumbnail">
+            <div class="card-img-overlay" id="ET-desc">
+                <div class="d-flex align-items-center justify-content-center flex-column h-100 w-100">
+                    <p class="card-title mb-2">
+                        Exercise Tracker
+                    </p>
+                    <div class="d-flex align-items-center justify-content-around w-100 flex-wrap mt-3">
+                        <span>MongoDB</span>
+                        <span>ReactJS</span>
+                        <span>NodeJS</span>
+                        <span>HTML & CSS</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <a class="card-link mt-5" href="https://acts-tracker.herokuapp.com/" target="_blank">View Live</a>
                 </div>
             </div>
         </div>
-        <div class="card project-tile shadow">
-            <img class="card-img-top" src="img/RQGenerator.png" alt="Project Thumbnail">
-            <div class="card-body">
-                <p class="card-title">Random Quote Generator</p>
-                <span>HTML & CSS</span>
-                <span>Bootstrap</span>
-                <span>ReactJS</span>
-                <span>jQuery</span>
-                <p class="card-text">Well, this seems pretty straight-forward. It fetches a random quote that can be shared online!</p>
-                <div class="links">
-                    <span><a class="card-link" href="https://torranicles.github.io/random-quote-generator/" target="_blank">View Page</a></span>
-                    <span><a class="card-link" href="https://github.com/torranicles/random-quote-generator" target="_blank">View Repository</a></span>
+        <div class="d-flex flex-wrap w-100 h-100 align-items-center justify-content-center">
+            <div class="card project-tile shadow" id="URLS-box">
+                <img class="card-img-top" src="img/URLShortener.PNG" alt="Project Thumbnail">
+                <div class="card-img-overlay" id="URLS-desc">
+                    <div class="d-flex align-items-center justify-content-center flex-column h-100 w-100">
+                        <p class="card-title mb-2">
+                            URL Shortener
+                        </p>
+                        <div class="d-flex align-items-center justify-content-around w-100 flex-wrap mt-3">
+                            <span>MongoDB</span>
+                            <span>ReactJS</span>
+                            <span>NodeJS</span>
+                            <span>HTML & CSS</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <a class="card-link mt-5" href="https://url-dwarf.herokuapp.com/" target="_blank">View Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project-tile shadow" id="MDP-box">
+                <img class="card-img-top" src="img/MDPreviewer.png" alt="Project Thumbnail">
+                <div class="card-img-overlay" id="MDP-desc">
+                    <div class="d-flex align-items-center justify-content-center flex-column h-100 w-100">
+                        <p class="card-title mb-2">
+                            Markdown Previewer
+                        </p>
+                        <div class="d-flex align-items-center justify-content-around w-100 flex-wrap mt-3">
+                            <span>HTML & CSS</span>
+                            <span>ReactJS</span>
+                            <span>jQuery</span>
+                        </div>
+                        <a class="card-link mt-5" href="https://torranicles.github.io/markdown-previewer/" target="_blank">View Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project-tile shadow" id="DM-box">
+                <img class="card-img-top" src="img/DrumMachine.png" alt="Project Thumbnail">
+                <div class="card-img-overlay" id="DM-desc">
+                    <div class="d-flex align-items-center justify-content-center flex-column h-100 w-100">
+                        <p class="card-title mb-2">
+                            Drum Machine
+                        </p>
+                        <div class="d-flex align-items-center justify-content-around w-100 flex-wrap mt-3">
+                            <span>HTML & CSS</span>
+                            <span>ReactJS</span>
+                        </div>
+                        <a class="card-link mt-5" href="https://torranicles.github.io/drum-machine/" target="_blank">View Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project-tile shadow" id="RQG-box">
+                <img class="card-img-top" src="img/RQGenerator.png" alt="Project Thumbnail">
+                <div class="card-img-overlay" id="RQG-desc">
+                    <div class="d-flex align-items-center justify-content-center flex-column h-100 w-100">
+                        <p class="card-title mb-2">
+                            Random Quote Generator
+                        </p>
+                        <div class="d-flex align-items-center justify-content-around w-100 flex-wrap mt-3">
+                            <span>HTML & CSS</span>
+                            <span>Bootstrap</span>
+                            <span>ReactJS</span>
+                            <span>jQuery</span>
+                        </div>
+                        <a class="card-link mt-5" href="https://torranicles.github.io/random-quote-generator/" target="_blank">View Live</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="card project-tile shadow">
-            <img class="card-img-top" src="img/DrumMachine.png" alt="Project Thumbnail">
-            <div class="card-body">
-                <p class="card-title">Drum Machine</p>
-                <span>HTML & CSS</span>
-                <span>ReactJS</span>
-                <p class="card-text">A 9-button drum for you to play with. It offers two banks, a display bar and volume adjuster.</p>
-                <div class="links">
-                    <span><a class="card-link" href="https://torranicles.github.io/drum-machine/" target="_blank">View Page</a></span>
-                    <span><a class="card-link" href="https://github.com/torranicles/drum-machine" target="_blank">View Repository</a></span>
-                </div>
-            </div>
-        </div>
-        <div class="card project-tile shadow">
-            <img class="card-img-top" src="img/Portfolio.png" alt="Project Thumbnail">
-            <div class="card-body">
-                <p class="card-title">Portfolio Page</p>
-                <span>HTML & CSS</span>
-                <span>Bootstrap</span>
-                <span>jQuery</span>
-                <p class="card-text">Contains my relevant information as well as my projects.</p>
-                <span><a class="card-link" href="https://github.com/torranicles/torranicles.github.io">View Repository</a></span>
-            </div>
-        </div>
-        <p>Check out my <a href="https://github.com/torranicles?tab=repositories">other repositories</a> done through HTML and CSS only.</p>
-        <div class="other-container">
-            <a href="https://torranicles.github.io/LP-Tribute/" target="_blank">
-                <img class="other" src="img/Tribute.png" alt="Tribute Page">
-            </a>
-            <a href="https://torranicles.github.io/technical-doc/" target="_blank">
-                <img class="other" src="img/TechnicalDoc.png" alt="Technical Documentation Page">
-            </a>
-            <a href="https://torranicles.github.io/product-landing/" target="_blank">
-                <img class="other" src="img/ProductLanding.png" alt="Product Landing Page">
-            </a>
-            <a href="https://torranicles.github.io/survey/" target="_blank">
-                <img class="other" src="img/Survey.png" alt="Survey Page">
-            </a>
-        </div>
+        <p>
+            Check out my repositories <a href="https://github.com/torranicles?tab=repositories">here!</a>
+        </p>
     </section>
     <section id="contact">
         <div>
