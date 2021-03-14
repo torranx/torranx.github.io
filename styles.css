@@ -58,9 +58,10 @@ h2, h3, h4 {
 }
 
 .about-body {
-    margin: 5% 15% 0;
+    margin: 0 12%;
     font-family: 'PT Sans', sans-serif;
-    font-size: 16px;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .skills-box {
@@ -73,12 +74,6 @@ h2, h3, h4 {
 .card-header {
     background-color: rgb(66, 66, 66);
     color: white;
-}
-
-#about > img {
-    border-radius: 50%;
-    width: 20%;
-    height: 20%;
 }
 
 .card-body  > img {
@@ -157,9 +152,14 @@ div > span {
 }
 
 @media only screen and (max-width: 768px) {
+    .about-body {
+        font-size: 16px;
+    }
+
     .nav-link {
         font-size: 16px;
     }
+
     .inner > h1 {
         font-size: 11vw;
     }
