@@ -3,7 +3,8 @@ const ids = {
     "#URLS-box": "#URLS-desc",
     "#MDP-box": "#MDP-desc",
     "#DM-box": "#DM-desc",
-    "#RQG-box": "#RQG-desc"
+    "#RQG-box": "#RQG-desc",
+    "#PIT-box": "$PIT-desc"
 }
 
 const info = (parentId, childId) => {
