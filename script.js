@@ -25,14 +25,6 @@ $(document).ready(function() {
                 }
             } 
         });
-    });
-    for (const [key, value] of Object.entries(ids)) {
-        info(key, value)
-    }
-});
-
-$(document).ready(function() {
-    $(window).scroll(function() {
         $(".other").each(function() {
             let bottomWindow = $(window).scrollTop() + $(window).innerHeight();
             let bottomObj = $(this).offset().top;
@@ -43,6 +35,9 @@ $(document).ready(function() {
                 }
             } 
         });
-    })
+    });
+    for (const [key, value] of Object.entries(ids)) {
+        info(key, value)
+    }
 });
 

@@ -123,6 +123,24 @@ h2, h3, h4 {
     border-radius: .5rem;
 }
 
+.other-container {
+    margin: 2% 20%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10% 3%;
+}
+
+.other {
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: -3px 3px 3px gray;
+    opacity: 0;
+}
+
+.other-container > a:hover {
+    opacity: .7;
+}
+
 div > span {
     color: black;
     background-color: rgb(245, 245, 245);
@@ -209,6 +227,10 @@ div > span {
         font-size: 6vw;
     }
 
+    .other-container {
+        margin: 5%;
+    }
+    
     .carousel {
         width: 90%;
     }
