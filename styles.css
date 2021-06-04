@@ -103,6 +103,10 @@ h2, h3, h4 {
     font-family: 'Varela Round', sans-serif;
 }
 
+.message {
+    color: gray;
+}
+
 .project-tile {
     margin-bottom: 7%;
     width: 55%;
@@ -218,6 +222,10 @@ div > span {
         font-size: 13px
     }
     
+    .message {
+        font-size: 10px;
+    }
+
     .project-tile {
         width: 90%;
         margin-bottom: 12%
