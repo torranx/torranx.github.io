@@ -4,7 +4,7 @@ const ids = {
     "#MDP-box": "#MDP-desc",
     "#DM-box": "#DM-desc",
     "#RQG-box": "#RQG-desc",
-    "#PIT-box": "$PIT-desc"
+    "#PIT-box": "#PIT-desc"
 }
 
 const info = (parentId, childId) => {
